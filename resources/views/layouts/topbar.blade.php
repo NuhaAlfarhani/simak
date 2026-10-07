@@ -1,6 +1,6 @@
-<div class="flex items-center justify-between w-full pb-6 mb-6 border-b border-slate-200">
+<div class="flex items-center justify-between w-full pb-6 mb-6">
     <!-- Judul Halaman Dinamis -->
-    <h2 class="text-2xl font-semibold text-slate-800">
+    <h2 class="text-2xl font-semibold text-slate-700 dark:text-slate-200">
         @yield('page_title', 'Dashboard')
     </h2>
     
