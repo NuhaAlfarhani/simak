@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('nis')->unique();
             $table->string('full_name');
-            $table->string('unit');
-            $table->string('grade_level');
-            $table->string('status');
+            $table->enum('unit', ['KB', 'TK', 'SD', 'SMP']);
+            $table->string('class');
+            $table->enum('status', ['active', 'graduated', 'transferred'])->default('active');
             $table->timestamps();
         });
     }

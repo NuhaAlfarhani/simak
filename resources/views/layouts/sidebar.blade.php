@@ -26,22 +26,16 @@
             <span class="text-sm">Dashboard</span>
         </a>
         
-        <!-- Tagihan -->
+        <!-- Tagihan & Tunggakan -->
         <a href="{{ url('/invoices') }}" class="flex items-center gap-3 px-4 py-3 rounded-lg transition-colors {{ request()->is('invoices*') ? 'bg-emerald-50 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 font-semibold' : 'text-slate-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-black/5 dark:hover:bg-slate-800' }}">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-            <span class="text-sm">Tagihan</span>
+            <span class="text-sm">Tagihan & Tunggakan</span>
         </a>
 
-        <!-- Tunggakan -->
-        <a href="{{ url('/arrears') }}" class="flex items-center gap-3 px-4 py-3 rounded-lg transition-colors {{ request()->is('arrears*') ? 'bg-emerald-50 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 font-semibold' : 'text-slate-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-black/5 dark:hover:bg-slate-800' }}">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-            <span class="text-sm">Tunggakan</span>
-        </a>
-
-        <!-- Pembayaran -->
-        <a href="{{ url('/payments') }}" class="flex items-center gap-3 px-4 py-3 rounded-lg transition-colors {{ request()->is('payments*') ? 'bg-emerald-50 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 font-semibold' : 'text-slate-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-black/5 dark:hover:bg-slate-800' }}">
+        <!-- Transaksi -->
+        <a href="{{ url('/transactions') }}" class="flex items-center gap-3 px-4 py-3 rounded-lg transition-colors {{ request()->is('transactions*') ? 'bg-emerald-50 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 font-semibold' : 'text-slate-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-black/5 dark:hover:bg-slate-800' }}">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-            <span class="text-sm">Pembayaran</span>
+            <span class="text-sm">Transaksi</span>
         </a>
 
         <!-- Aset -->
@@ -51,7 +45,7 @@
         </a>
 
         <!-- Pengajuan Anggaran -->
-        <a href="{{ url('/budget-requests') }}" class="flex items-center gap-3 px-4 py-3 rounded-lg transition-colors {{ request()->is('budget-requests*') ? 'bg-emerald-50 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 font-semibold' : 'text-slate-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-black/5 dark:hover:bg-slate-800' }}">
+        <a href="{{ url('/budget_requests') }}" class="flex items-center gap-3 px-4 py-3 rounded-lg transition-colors {{ request()->is('budget_requests*') ? 'bg-emerald-50 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 font-semibold' : 'text-slate-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-black/5 dark:hover:bg-slate-800' }}">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
             <span class="text-sm">Pengajuan Anggaran</span>
         </a>

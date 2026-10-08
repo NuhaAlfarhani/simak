@@ -17,3 +17,15 @@ Route::get('/form_budget', function () {
 Route::get('/invoices', function () {
     return view('invoices.index');
 });
+Route::get('/transactions', function () {
+    return view('transactions.index');
+});
+Route::get('/assets', function () {
+    return view('assets.index');
+});
+Route::get('/budget_requests', function () {
+    return view('budget_requests.index');
+});
+Route::get('/settings', function () {
+    return view('settings.index');
+});

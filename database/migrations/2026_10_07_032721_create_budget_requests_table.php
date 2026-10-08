@@ -13,12 +13,14 @@ return new class extends Migration
     {
         Schema::create('budget_requests', function (Blueprint $table) {
             $table->id();
+            $table->string('request_code')->unique();
+            $table->string('requester_name');
+            $table->string('unit_role');
             $table->string('activity');
             $table->decimal('amount', 15, 2);
             $table->string('proposal_file');
             $table->string('email');
-            $table->string('tracking_code')->unique();
-            $table->string('verification_status');
+            $table->enum('status', ['pending', 'approved', 'rejected'])->default('pending');
             $table->text('notes')->nullable();
             $table->timestamps();
         });

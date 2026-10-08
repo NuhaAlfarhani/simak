@@ -7,12 +7,12 @@
     <!-- Statistik -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         
-        <!-- Tagihan -->
+        <!-- Tagihan & Tunggakan -->
         <div class="bg-white dark:bg-[#1F2937] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.12)] dark:shadow-none dark:border dark:border-[#374151] flex flex-col justify-between">
             <div class="flex items-center justify-between border-b border-slate-100 dark:border-[#374151] pb-4 mb-4">
-                <h3 class="text-slate-700 dark:text-slate-200 font-medium">Tagihan</h3>
+                <h3 class="text-slate-700 dark:text-slate-200 font-medium">Tagihan & Tunggakan</h3>
                 <a href="{{ url('/invoices') }}" class="text-xs text-emerald-600 hover:text-emerald-700 font-medium flex items-center gap-1">
-                    Pergi ke Halaman Tagihan <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    Lihat Semua <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </a>
             </div>
             <div class="flex justify-between items-end">
@@ -30,9 +30,9 @@
         <!-- Tunggakan -->
         <div class="bg-white dark:bg-[#1F2937] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.12)] dark:shadow-none dark:border dark:border-[#374151] flex flex-col justify-between">
             <div class="flex items-center justify-between border-b border-slate-100 dark:border-[#374151] pb-4 mb-4">
-                <h3 class="text-slate-700 dark:text-slate-200 font-medium">Tunggakan</h3>
-                <a href="{{ url('/arrears') }}" class="text-xs text-emerald-600 hover:text-emerald-700 font-medium flex items-center gap-1">
-                    Pergi ke Halaman Tunggakan <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <h3 class="text-slate-700 dark:text-slate-200 font-medium">Siswa Menunggak</h3>
+                <a href="{{ url('/invoices?status=menunggak') }}" class="text-xs text-emerald-600 hover:text-emerald-700 font-medium flex items-center gap-1">
+                    Lihat Data <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </a>
             </div>
             <div class="flex justify-between items-end">
@@ -47,12 +47,12 @@
             </div>
         </div>
 
-        <!-- Pembayaran -->
+        <!-- Transaksi -->
         <div class="bg-white dark:bg-[#1F2937] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.12)] dark:shadow-none dark:border dark:border-[#374151] flex flex-col justify-between">
             <div class="flex items-center justify-between border-b border-slate-100 dark:border-[#374151] pb-4 mb-4">
-                <h3 class="text-slate-700 dark:text-slate-200 font-medium">Pembayaran</h3>
-                <a href="{{ url('/payments') }}" class="text-xs text-emerald-600 hover:text-emerald-700 font-medium flex items-center gap-1">
-                    Pergi ke Halaman Pembayaran <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <h3 class="text-slate-700 dark:text-slate-200 font-medium">Transaksi Masuk</h3>
+                <a href="{{ url('/transactions') }}" class="text-xs text-emerald-600 hover:text-emerald-700 font-medium flex items-center gap-1">
+                    Riwayat Transaksi <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </a>
             </div>
             <div class="flex justify-between items-end">

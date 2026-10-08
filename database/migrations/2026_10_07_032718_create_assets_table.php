@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('category');
             $table->date('acquisition_date');
             $table->decimal('acquisition_cost', 15, 2);
-            $table->string('condition');
+            $table->enum('condition', ['good', 'repair_needed', 'broken'])->default('good');
             $table->string('location');
             $table->timestamps();
         });
